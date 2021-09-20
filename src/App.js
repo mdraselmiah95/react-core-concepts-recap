@@ -3,18 +3,20 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <MyComponent></MyComponent>
-      <MyComponent></MyComponent>
-      <MyComponent></MyComponent>
+      <MyComponent brand="Apple" price="7000"></MyComponent>
+      <MyComponent brand="Realme" price="13000"></MyComponent>
+      <MyComponent brand="Phone" price="2000"></MyComponent>
     </div>
   );
 }
 
-function MyComponent() {
+function MyComponent(props) {
   return (
     <div className="Recap">
-      <h1>This is a start of new React concept recap</h1>
+      <h1>React concept recap</h1>
+      <h1>This is a cool Brand: {props.brand}</h1>
       <p>I can write my own component</p>
+      <p>Sorry for the Price: {props.price}</p>
     </div>
   );
 }
