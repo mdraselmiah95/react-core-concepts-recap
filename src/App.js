@@ -14,10 +14,10 @@ function App() {
 function MyComponent(props) {
   const handleAddPoint = () => {
     // console.log("clicked");
-    const newPoints = points + 1;
+    const newPoints = points * 2;
     setPoints(newPoints);
   };
-  const [points, setPoints] = useState(0);
+  const [points, setPoints] = useState(1);
   return (
     <div className="Recap">
       <h1>React concept recap</h1>
