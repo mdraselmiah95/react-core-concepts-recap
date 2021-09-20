@@ -12,7 +12,7 @@ function App() {
 
 function MyComponent() {
   return (
-    <div>
+    <div className="Recap">
       <h1>This is a start of new React concept recap</h1>
       <p>I can write my own component</p>
     </div>
