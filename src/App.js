@@ -10,6 +10,10 @@ function App() {
   );
 }
 
+const handleAddPoint = () => {
+  console.log("clicked");
+};
+
 function MyComponent(props) {
   return (
     <div className="Recap">
@@ -19,6 +23,7 @@ function MyComponent(props) {
       <p style={{ color: "pink", fontWeight: "bold" }}>
         Sorry for the Price: {props.price}
       </p>
+      <button onClick={handleAddPoint}>Add Point</button>
     </div>
   );
 }
