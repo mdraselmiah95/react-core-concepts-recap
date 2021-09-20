@@ -11,11 +11,12 @@ function App() {
   );
 }
 
-const handleAddPoint = () => {
-  console.log("clicked");
-};
-
 function MyComponent(props) {
+  const handleAddPoint = () => {
+    // console.log("clicked");
+    const newPoints = points + 1;
+    setPoints(newPoints);
+  };
   const [points, setPoints] = useState(0);
   return (
     <div className="Recap">
