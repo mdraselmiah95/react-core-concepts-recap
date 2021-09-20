@@ -23,7 +23,18 @@ function LoadUsers() {
   }, []);
   return (
     <div>
-      <h1>Loaded Users</h1>
+      <h1>Loaded Users: {users.length}</h1>
+      {users.map((user) => (
+        <User name={user.name}></User>
+      ))}
+    </div>
+  );
+}
+
+function User(props) {
+  return (
+    <div>
+      <h4>Name: {props.name}</h4>
     </div>
   );
 }
