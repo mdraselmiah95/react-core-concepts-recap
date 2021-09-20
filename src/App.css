@@ -44,3 +44,10 @@
   padding: 6px 3px;
   border-radius: 6px;
 }
+.User {
+  background-color: aquamarine;
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid gold;
+  border-radius: 8px;
+}

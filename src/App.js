@@ -25,7 +25,7 @@ function LoadUsers() {
     <div>
       <h1>Loaded Users: {users.length}</h1>
       {users.map((user) => (
-        <User name={user.name}></User>
+        <User name={user.name} email={user.email}></User>
       ))}
     </div>
   );
@@ -33,8 +33,9 @@ function LoadUsers() {
 
 function User(props) {
   return (
-    <div>
+    <div className="User">
       <h4>Name: {props.name}</h4>
+      <p>User Email: {props.email}</p>
     </div>
   );
 }
