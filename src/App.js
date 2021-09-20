@@ -14,8 +14,8 @@ function MyComponent(props) {
   return (
     <div className="Recap">
       <h1>React concept recap</h1>
-      <h1>This is a cool Brand: {props.brand}</h1>
       <p>I can write my own component</p>
+      <h1>This is a cool Brand: {props.brand}</h1>
       <p>Sorry for the Price: {props.price}</p>
     </div>
   );
