@@ -61,4 +61,14 @@ function MyComponent(props) {
   );
 }
 
+/* 
+1. JSX
+2. Component
+3. Props
+4. EventHandle
+5. State
+6. useEffect
+
+*/
+
 export default App;
